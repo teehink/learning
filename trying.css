@@ -1,0 +1,81 @@
+html, body, header, h1, h2, h3, p, img, div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: aquamarine;
+  color: midnightblue;
+  font-size: 21px;
+}
+
+h1 {
+  font-size: 40px;
+  color: brown;
+  padding: 25px;
+  grid-row: 1;
+  grid-column: 4 / span 5;
+  justify-content: flex-end;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+button {
+  background: hsla(250, 20%, 70%, 30%);
+  color: rgba(100, 100, 100, 60);
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-top: 2px solid orange;
+  border-bottom: 2px solid green;
+  padding: 8px 16px;
+  margin: 0 10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  height: 100vh; 
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.current-pic {
+  grid-row: 2 / span 8;
+  grid-column: 2 / span 8;
+  display: none;
+}
+
+.show-pic {
+  display: block;
+}
+
+.hide-pic {
+  display: none;
+}
+
+#nav-btns {
+  display: grid;
+  grid-row-start: 5;
+  grid-column: 1 / span 10;
+  align-items: baseline;
+}
+
+#next-btn {
+  grid-row-start: 4;
+  grid-column-start: 9;
+}
+
+#prev-btn {
+  grid-row-start: 4;
+  grid-column-start: 1;
+}
