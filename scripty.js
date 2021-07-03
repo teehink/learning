@@ -18,8 +18,8 @@ function hidePics() {
 
 function moveToNextPic() {
   hidePics()
-  if (picPosition = totalPics - 1) {
-    picPosition === 0
+  if (picPosition === totalPics - 1) {
+    picPosition = 0
   } else {
     picPosition ++
   }
